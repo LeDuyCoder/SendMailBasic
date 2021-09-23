@@ -12,7 +12,7 @@ Email = mail.Email()
 class LoginWindow(QDialog):
     def __init__(self):
         super(LoginWindow, self).__init__()
-        loadUi("ui/login.ui", self)
+        loadUi("login.ui", self)
         self.setWindowTitle("Send Mail Speed")
         self.Button.clicked.connect(self.login)
         self.Button_register.clicked.connect(self.register)
@@ -35,7 +35,7 @@ class LoginWindow(QDialog):
 class SeendWindow(QDialog):
     def __init__(self):
         super(SeendWindow, self).__init__()
-        loadUi("ui/SendMail.ui", self)
+        loadUi("SendMail.ui", self)
         self.setWindowTitle("Send Mail Speed")
         self.Button_Send.clicked.connect(self.send)
 
